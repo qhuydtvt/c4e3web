@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for article in html_list %}
+<h1>tên bài viết: {{article.title}}</h1>
+<h2>tên tác giả: {{article.author}}</h2>
+<h3>ảnh bài viết<br> <img src="{{article.image}}">  </h3>
+<p>Nội dung bài viết:<br> {{article.content}}</p>
+{% endfor %}
+</body>
+</html>
